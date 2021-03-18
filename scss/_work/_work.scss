@@ -1,0 +1,49 @@
+@import "../_essentials/colors";
+
+.portfolio {
+  margin: 1.5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .item {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0.5%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .action {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: 0.5s;
+
+      a {
+        text-decoration: none;
+        color: white;
+        background: rgba($primary-color, 0.9);
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .item:hover {
+    .action {
+      opacity: 1;
+    }
+  }
+}
