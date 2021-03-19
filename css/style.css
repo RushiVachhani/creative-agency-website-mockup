@@ -29,9 +29,9 @@ section {
 }
 section .home-image {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 110%;
+  width: 40%;
+  height: 50%;
+  right: 3%;
 }
 section .home-content {
   position: relative;
@@ -322,6 +322,10 @@ section.home {
     font-size: 1.5rem;
   }
 
+  .home {
+    margin: 0% 5% 0% 0%;
+  }
+
   section {
     padding: 100px 0px;
   }
@@ -340,7 +344,7 @@ section.home {
   .service_section_title,
 .work_section_title,
 .contact_section_title {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10%;
   }
 
   .contact-form,
